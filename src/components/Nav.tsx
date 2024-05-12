@@ -49,9 +49,11 @@ const Nav = () => {
       )}
     >
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between ">
-        <div className="flex w-full  items-center gap-2">
-          <img src="/logo.webp" alt="mini_logo" className="w-14" />
-          <h1 className="font-secondary text-4xl text-primary">CHROMIA</h1>
+        <div className=" w-full">
+          <a className="flex w-fit items-center gap-2" href="/">
+            <img src="/logo.webp" alt="mini_logo" className="w-14" />
+            <h1 className="font-secondary text-4xl text-primary">CHROMIA</h1>
+          </a>
         </div>
         <ul className="hidden w-full items-center justify-center gap-x-2 lg:flex">
           {navList.map((items) => (
@@ -77,7 +79,12 @@ const Nav = () => {
           ))}
         </ul>
         <div className="flex w-full items-center justify-end gap-x-3 ">
-          <Button className="hidden rounded-3xl lg:block">Add to Chrome</Button>
+          <Button className="relative gap-2 rounded-3xl hidden lg:flex" asChild>
+            <a href="/download" rel="noopener noreferrer" className="">
+              <p className="">Download</p>
+              <p className="text-xs opacity-50">&#40;BETA&#41;</p>
+            </a>
+          </Button>
           <Sheet>
             <SheetTrigger asChild>
               <button className="block lg:hidden">
@@ -85,7 +92,7 @@ const Nav = () => {
               </button>
             </SheetTrigger>
             <SheetContent>
-              <div className="h-full w-full bg-white font-secondary p">
+              <div className="p h-full w-full bg-white font-secondary">
                 <img
                   src="/logo.webp"
                   alt="Logo"
@@ -93,7 +100,7 @@ const Nav = () => {
                 />
                 <ul className="mt-10 flex w-full flex-col items-center justify-center gap-y-10">
                   {navList.map((items) => (
-                    <a href={items.link}>
+                    <a href={items.link} key={items.label}>
                       <li key={items.label}>{items.label}</li>
                     </a>
                   ))}
