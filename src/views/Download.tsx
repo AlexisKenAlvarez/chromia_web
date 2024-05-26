@@ -31,7 +31,7 @@ const Download = () => {
 
           <div className="space-y-2">
             <h1 className="">
-              <b>4.&#41;</b> Go to{" "}
+              <b>3.&#41;</b> Go to{" "}
               <span className="text-blue-500">chrome://extensions/</span> tab
               and turn on <span className="text-blue-500">Developer mode</span> on the top right corner of the screen.
             </h1>
