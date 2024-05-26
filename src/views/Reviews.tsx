@@ -11,13 +11,6 @@ const Reviews = () => {
       message: "Because I can use it very well.",
     },
     {
-      name: "John Doe",
-      image: "spongebob",
-      role: "Software Engineer",
-      subject: "Great",
-      message: "I can now control my computer with my voice.",
-    },
-    {
       name: "Jose Rizal",
       image: "jose",
       role: "Graphic Designer",
@@ -25,11 +18,19 @@ const Reviews = () => {
       message:
         "Napakahusay ng inyong naimbento, salamat sa inyo. Mabuhay ang Pilipinas",
     },
+
+    {
+      name: "Aaron Joshua Espinosa",
+      image: "aj",
+      role: "3D Artist / Developer",
+      subject: "Great",
+      message: "I can now control my computer with my voice.",
+    },
   ];
 
   return (
     <Container className="py-20 ">
-      <div className="mx-auto max-w-screen-xl scroll-margin" id="reviews">
+      <div className="scroll-margin mx-auto max-w-screen-xl" id="reviews">
         <div className="relative mx-auto h-fit w-fit space-y-1.5">
           <div className="mx-auto h-1 w-8 rounded-2xl bg-primary"></div>
           <h1 className="text-3xl">What they say</h1>
@@ -59,7 +60,7 @@ const Reviews = () => {
                   <p className="text-sm opacity-80">{items.message}</p>
                 </div>
 
-                <div className="flex mt-5">
+                <div className="mt-5 flex">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="text-yellow-400" fill="#facc15" />
                   ))}

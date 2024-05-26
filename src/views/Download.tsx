@@ -31,18 +31,26 @@ const Download = () => {
 
           <div className="space-y-2">
             <h1 className="">
-              <b>3.&#41;</b> Go to{" "}
+              <b>4.&#41;</b> Go to{" "}
               <span className="text-blue-500">chrome://extensions/</span> tab
-              and click <span className="text-blue-500">Load unpacked</span>
+              and turn on <span className="text-blue-500">Developer mode</span> on the top right corner of the screen.
             </h1>
-            <img src="/steps/step3.jpg" alt="Step 2" className="" />
+            <img src="/steps/step3.jpg" alt="Step 3" className="" />
           </div>
 
           <div className="space-y-2">
             <h1 className="">
-              <b>4.&#41;</b> Select the unzipped folder and it should appear in the chrome extensions tab and it is now ready to use.
+              <b>4.&#41;</b> 
+              You will see a new button called <span className="text-blue-500">Load unpacked</span> on the top left corner of the screen. Click it.
             </h1>
             <img src="/steps/step4.jpg" alt="Step 4" className="" />
+          </div>
+
+          <div className="space-y-2">
+            <h1 className="">
+              <b>5.&#41;</b> Select the unzipped folder and it should appear in the chrome extensions tab and it is now ready to use.
+            </h1>
+            <img src="/steps/step5.jpg" alt="Step 5" className="" />
           </div>
 
 
